@@ -1,0 +1,132 @@
+.sing_in {
+    height: 430px;
+    width: 400px;
+    background-color: #fff;
+    padding: 1em 2em;
+    border-radius: 20px;
+    .sing_in__container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .sing_in__container__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            strong {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+                    "Helvetica Neue", sans-serif;
+                color: #3b3663;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            span {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+                    "Helvetica Neue", sans-serif;
+                color: #696687;
+                opacity: 0.8;
+                font-size: 18px;
+            }
+        }
+        .sing_in__container__form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            margin-top: 2em;
+            .input-label {
+                position: relative;
+                .input-line {
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #696687;
+                    opacity: 0.7;
+                    bottom: 0;
+                }
+                
+                p {
+                    color: #696687;
+                    font-size: 17px;
+                    opacity: 0.7;
+                    margin: 0;
+                    margin-bottom: -0.3em;
+                }
+                .form-text {
+                    color: #696687;
+                    font-size: 18px;
+                    border: 0;
+                    margin: 0;
+                    height: 40px;
+                    width: 100%;
+                    background: white no-repeat;
+                    outline: none;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,"Helvetica Neue", sans-serif;
+        
+               }
+               .form-text:focus + .on-select {
+                transform: scale(1); /* Scale to 1 when input is focused */
+              }
+              
+            }
+               
+            .sing_in__container__form__input-username{
+                .form-text{
+                    
+                    &:focus{
+                        .on-select{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+            
+
+            .sing_in__container__form__input-submit {
+                button {
+                    margin-top: 1.5em;
+                    padding: 15px 45px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #4d61fc;
+                    font-weight: 600;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.7em;
+                    font-size: 16px;
+                    transition:
+                        background-color 0.2s ease-in-out,
+                        transform 0.2s ease-in-out;
+                    &:hover {
+                        background-color: #2036de;
+                        transform: translateY(-5px);
+                    }
+                }
+               
+                
+            }
+        }
+    }
+}
+
+
+
+.on-select {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #4d62fc;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+   
+}
+input:focus ~ .on-select {
+    transform: scale(1); 
+  }

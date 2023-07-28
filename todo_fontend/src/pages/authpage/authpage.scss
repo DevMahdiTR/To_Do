@@ -1,0 +1,43 @@
+.auth_page{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    .auth_page__container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;     
+        background: linear-gradient(90deg, #83ff95 0%, #a8c8ff 100%);
+        .sing-components{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+
+        .information{
+            position: absolute;
+            background-color: rgba(255, 148, 148, 0.781);
+            border-radius: 5px;
+            font-size: 1.2rem;
+            padding: 0.1em 1.5em;
+            display: flex;
+            align-items: flex-start;
+            border: 2px solid red;
+            bottom: 2em;
+            left: 2em;
+            opacity: 0;
+            transition: all 0.5s ease;
+            
+        }
+    }
+}
+
+.notify{
+    opacity: 1 !important;
+}
+

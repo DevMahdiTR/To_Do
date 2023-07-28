@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500&display=swap');
+
+.task{
+    th{
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+        color: #4f4f54;
+        padding: 0.5em;
+        text-align: left;
+    }
+    td{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1em;
+        color: #4f4f54;
+        padding: 0.5em;
+        text-align: left;
+    }
+    .action-btns{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:  1em;
+        button{
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            
+           font-family: "Popping" , sans-serif;
+           font-weight: bold;
+           text-transform: uppercase;
+           padding: 1em 2em;
+           color:white;
+           --mdb-btn-box-shadow: 0 4px 9px -4px rgba(0,0,0,0.35);
+    --mdb-btn-hover-box-shadow: 0 8px 9px -4px rgba(0,0,0,0.15),0 4px 18px 0 rgba(0,0,0,0.1);
+    --mdb-btn-focus-box-shadow: 0 8px 9px -4px rgba(0,0,0,0.15),0 4px 18px 0 rgba(0,0,0,0.1);
+    --mdb-btn-active-box-shadow: 0 8px 9px -4px rgba(0,0,0,0.15),0 4px 18px 0 rgba(0,0,0,0.1);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;        
+            cursor: pointer;
+}
+        .btn-danger{
+            background-color: #dc4c64;
+            --mdb-btn-box-shadow: 0 4px 9px -4px #dc4c64;
+            font-size: 0.8rem;
+            &:hover{
+                background-color: #c43a50;
+            }
+        }
+
+        .btn-success{
+            background-color: #14a44d;
+            --mdb-btn-box-shadow: 0 4px 9px -4px #14a44d;
+            font-size: 0.8rem;
+            &:hover{
+                background-color: #0d8a3f;
+            }
+        }
+    }
+}
